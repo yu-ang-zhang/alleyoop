@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ALLEYOOP</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/script.js"></script>
+		
+	</head>
+	<body>
+		<div id="header">
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="park.html">Park</a></li>
+					<li><a href="hotel.html">Hotel</a></li>
+					<li><a href="more.html">More</a></li>
+					<li><a href="search.html">Search</a></li>
+					<li style="float: right;" id="login" style="background-color: rgba(240, 248, 255, 0.192);"><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+			<div id="logo">
+				<h1><a>ALLEYOOP <bdi>Themed Resort</bdi></a></h1>
+			</div>
+		</div>
+
+		<div id="featured">
+				<header>
+					<form id="typing">
+					<strong>username: </strong><input type="text" placeholder="email or phone only" id="username"> <br><br>
+					<strong>password: </strong><input type="text" placeholder="letter and number only" id="password"><br>
+					<a href="loggedin.html" class="button" id="buy">create</a>
+					<a href="loggedin.html" class="button" id="buy">login</a>
+					</form>
+				</header>
+				<a href="index.html" class="button" id="back">back</a>
+		</div>
+
+		<div id="footer">
+			<h2>Contact</h2><br>
+			<span class="byline">get in touch with ALLEYOOP</span><br>
+			<h3>Email: alleyoop@deco1400.com</h3><br>
+			<h3>Phone: +00 123456789</h3><br>
+			<h3>Follow us on:
+				Twitter   Facebook   WeChat
+			</h3>
+		</div>
+		<br><br>
+		<div id="copyright">
+				Design: <p>Yuang Zhang(44629919)</p> 
+		</div>
+
+		<script>  
+			        window.onload = function(){  
+			            var btn = document.getElementById("buy"); 
+						btn.addEventListener('click',function() {
+							var x = prompt("please reconfirm your username");
+							var y = prompt("please reconfirm your password");
+							alert("your username is: " + x);
+							alert("your password is: " + y);
+						},
+						false); 	
+					}
+				</script> 
+	</body>
+</html>
